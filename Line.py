@@ -6,7 +6,7 @@ video =cv2.VideoCapture("road_car_view.mp4")
 while True:
     ret,or_frame=video.read()
     if not ret :
-        video =cv2.VideoCapture("road_car_view.mp4")
+        video =cv2.VideoCapture("road_car_view(2).mp4")
         continue
     frame=cv2.GaussianBlur(or_frame,(5,5),0)
     hsv=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
